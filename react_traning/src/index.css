@@ -1,0 +1,14 @@
+body{ 
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+p { 
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
