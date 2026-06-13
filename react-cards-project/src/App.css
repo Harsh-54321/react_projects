@@ -124,7 +124,7 @@
 }
 body,html {
     font-family: var(--sitefonts);
-    color: var(--black);
+    color: var(--white);
     line-height: 0;
     font-size: 16px;
     scroll-behavior: smooth;
@@ -565,8 +565,12 @@ ol li {
     flex-wrap: wrap;
     width: 100%;
     row-gap: 20px;
-    justify-content: space-between;
-
+    /* justify-content: space-between; */
+    & > div {
+        width: calc(25%);
+        display: inline-block;
+        padding: 0 10px;
+    }
     & .top {
         display: inline-flex;
         align-items: center;
@@ -578,6 +582,8 @@ ol li {
             border-radius: 100%;
             border: 1px solid #000;
             object-fit: cover;
+            width: 50px; min-width: 50px;
+            height: 50px;
         }
         & button {
             display: inline-flex;
@@ -595,7 +601,15 @@ ol li {
     }
 }
 
-.card {display: inline-flex;flex-wrap: wrap;justify-content: space-between;background: #fff;flex-direction: column;padding: 20px;border-radius: 10px;width: calc(25% - 10px);}
+.card {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
 
 .top-wrapper {
     width: 100%;
@@ -626,7 +640,7 @@ ol li {
         font-size:12px;
         padding:5px 5px;
         border-radius:5px;
-        background:#d3d3d366;
+        background:#d3d3d366; color: #000;
     }
 }
 
@@ -645,9 +659,11 @@ ol li {
         font-weight:bold;
         line-height:1.2;
         margin-bottom:10px;
+        color:#000;
     }
     & .location {
         font-size:12px;line-height: 1;
+        color:#000;
     }
 }
 
