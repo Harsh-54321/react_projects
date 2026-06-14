@@ -4,7 +4,7 @@ import Card_temp from './components/card'
 const jobs = [
   {
     id: 1,
-    logo: "https://images.unsplash.com/photo-1563694983011-6f4d90358083?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bG9nb3xlbnwwfHwwfHx8Mg%3D%3D",
+    logo: "https://i.pinimg.com/1200x/c3/04/c5/c304c5ddad8d6a8b47f59cf6d62d6e30.jpg",
     companyName: "TechNova",
     postedDays: "2 days ago",
     jobTitle: "Senior UI/UX Designer",
@@ -14,7 +14,7 @@ const jobs = [
   },
   {
     id: 2,
-    logo: "https://images.unsplash.com/photo-1563694983011-6f4d90358083?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bG9nb3xlbnwwfHwwfHx8Mg%3D%3D",
+    logo: "https://i.pinimg.com/1200x/4b/b7/4d/4bb74d9f0fb6ee8028babe768ec51f82.jpg",
     companyName: "PixelCraft",
     postedDays: "5 days ago",
     jobTitle: "Graphics Designer",
@@ -103,7 +103,7 @@ const jobs = [
     location: "Jaipur, India",
   },
 ];
-console.log(jobs);
+// console.log(jobs);
 function App() {
   return (
     <>
