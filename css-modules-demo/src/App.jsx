@@ -7,7 +7,7 @@ import Button  from './components/Button';
 import Card    from './components/Card';
 import Badge   from './components/Badge';
 import Avatar  from './components/Avatar';
-// import Alert   from './components/Alert';
+import Alert   from './components/Alert';
 
 function Section({ title, children }) {
   return (

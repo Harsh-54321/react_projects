@@ -45,3 +45,4 @@ function Alert({ type = 'info', title, children, dismissible = false }) {
 }
 
 export default Alert;
+

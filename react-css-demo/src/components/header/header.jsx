@@ -1,9 +1,12 @@
 import React from 'react'
-import '../styles/header.css';
+import styles from '../header/header.module.css';
+// import button from '../button/button.jsx';
+import Button1 from '../button/button.jsx'
+
 
 const  Header = () => {
   return (
-    <div className='header'>
+    <div className={`${styles.header} headrer`}>
         <div className="container">
             <div className="flex-container">
                 <h3>Rana</h3>
@@ -15,7 +18,10 @@ const  Header = () => {
                     <a href="#">Testimonials</a>
                     <a href="#">Contects</a>
                 </nav>
-                <a href="#" className='button btn-theme'>App</a>
+                <Button1 />
+                {/* <a href="#" className={styles.}>App</a> */}
+                {/* {<button />}
+                {console.log(button)} */}
             </div>
         </div>
     </div>
