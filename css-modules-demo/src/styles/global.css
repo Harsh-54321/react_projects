@@ -1,0 +1,51 @@
+/*
+  global.css
+  ──────────
+  This is the ONE non-module file in the project.
+  It holds:
+    1. CSS Custom Properties (design tokens) accessible everywhere
+    2. A minimal reset
+    3. Base body / typography defaults
+
+  NOTE: CSS Modules still use these variables (var(--color-primary))
+  because custom properties are not scoped — they live on :root.
+*/
+
+/* ── Design tokens ── */
+:root {
+  --color-primary:   #6c63ff;
+  --color-surface:   #ffffff;
+  --color-bg:        #f8f7ff;
+  --color-text:      #1a1a2e;
+  --color-muted:     #6b7280;
+  --color-border:    #e8e8f0;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.07);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Base ── */
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { text-decoration: none; }

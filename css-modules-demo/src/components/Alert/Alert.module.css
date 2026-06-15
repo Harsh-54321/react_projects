@@ -1,0 +1,58 @@
+/* Alert.module.css */
+
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  border-left: 4px solid transparent;
+}
+
+.icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.message {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* ── Type variants ── */
+.info    { background: #eff6ff; border-color: #3b82f6; color: #1e40af; }
+.success { background: #f0fdf4; border-color: #22c55e; color: #166534; }
+.warning { background: #fefce8; border-color: #eab308; color: #854d0e; }
+.error   { background: #fef2f2; border-color: #ef4444; color: #991b1b; }
+
+/* ── Close button ── */
+.closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  opacity: 0.5;
+  padding: 0 0.2rem;
+  color: inherit;
+  line-height: 1;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+}
+
+.closeBtn:hover {
+  opacity: 1;
+}

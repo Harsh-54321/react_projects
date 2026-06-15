@@ -1,0 +1,52 @@
+/* Avatar.module.css */
+
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: visible; /* let the status dot peek outside */
+}
+
+/* ── Size variants ── */
+.sm { width: 32px;  height: 32px;  font-size: 0.65rem; }
+.md { width: 48px;  height: 48px;  font-size: 0.9rem;  }
+.lg { width: 72px;  height: 72px;  font-size: 1.3rem;  }
+
+/* ── Image ── */
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e8e8f0;
+}
+
+/* ── Initials fallback ── */
+.fallback {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6c63ff, #a78bfa);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ── Status dot (bottom-right corner) ── */
+.statusDot {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.online  { background: #22c55e; }
+.offline { background: #9ca3af; }
+.busy    { background: #f97316; }

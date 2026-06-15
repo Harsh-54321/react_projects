@@ -1,0 +1,95 @@
+/* Header.module.css — scoped entirely to the Header component */
+
+.header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* The "sticky" class is ADDED dynamically via props */
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* ── Logo ── */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon {
+  font-size: 1.6rem;
+  color: #6c63ff;
+}
+
+.logoText {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #e0e0ff;
+}
+
+/* ── Center heading ── */
+.center {
+  text-align: center;
+  flex: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(90deg, #a78bfa, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  letter-spacing: 0.04em;
+}
+
+/* ── Nav ── */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navLink {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: #fff;
+}
+
+.navLinkAccent {
+  composes: navLink;          /* ← CSS Modules "composes": inherit navLink styles */
+  color: #a78bfa;
+  font-weight: 700;
+}
+
+.navLinkAccent:hover {
+  color: #c4b5fd;
+}
