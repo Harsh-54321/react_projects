@@ -4,8 +4,8 @@ import Section2 from "../src/Section2/Section2.jsx";
 const App = () => {
   return (
     <>
-    <Section1 />
-    <Section2 />
+      <Section1 />
+      <Section2 />
     </>
   )
 }

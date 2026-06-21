@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 const Section1 = () => {
   return (
-    <section className='my-10 py-10 border-bs-orange-50 h-screen '>
+    <section className='my-2 border-bs-orange-50 mb-30 header'>
         <div className="container">
             <Navbar />
         </div>
