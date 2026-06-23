@@ -10,7 +10,8 @@ const Right_boxs_side = (props) => {
         {
          props.users.map(function(users) {
           //  return <div key={user.id}></div>;
-           return <Card img={users.img} intro={users.intro} tag={users.tag}/>
+          // const count = count + 1; 
+          return <Card img={users.img} intro={users.intro} tag={users.tag}/>
          })
         } 
       </div>
