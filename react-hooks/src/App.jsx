@@ -56,6 +56,28 @@ const App = () => {
     setArr(newArr);
   }
 
+  // this function is use demonstraite the change the values of Employee Details using Functions
+
+  const [EmpDetails, setEmpDetails] = useState({EmpNm:"Rana Harsh", EmpAge:30, EmpNo:45080})
+
+  const updateEmployee = () => { 
+    console.log({EmpDetails});
+    setEmpDetails(prev => ({...prev, EmpNm:"Rana Viren", EmpAge:40, EmpNo:41250}))
+  }
+
+  // this function is use demonstraite the change the values of Employee Details using batch update
+  const [count, setcount] = useState(100)
+  const BatchUpdate = () => {
+    //  setcount(count + 1);
+    //  setcount(count + 1);
+    //  setcount(count + 1);
+    //  This Will update only by +1 
+
+    setcount(prev => (prev + 1))
+    setcount(prev => (prev + 1))
+    setcount(prev => (prev + 1))
+  }
+
   return (
     
     <>
@@ -85,6 +107,23 @@ const App = () => {
         <div className="container">
           <h1 className='!text-white'>This is Array::: {Arr} </h1>
           <a href="#" onClick={ChangearrInfo} className='button btn-theme mx-auto !hover:bg-violet-600'>CHANGE Array</a>
+        </div>
+      </section>
+
+      <section className='py-30 w-full text-center bg-blue-300'>
+        <div className="container">
+          <h1 className='text-center'>this is the example of change the values useing functions.</h1>
+          <h2>This is an Employ details <br /> Employee Name:{EmpDetails.EmpNm} <br /> Employee No:{EmpDetails.EmpNo} <br /> 
+           age:{EmpDetails.EmpAge}</h2>
+          <a href="#" className='button btn-theme' onClick={updateEmployee}>Update Empolyee</a>
+        </div>
+      </section>
+
+      <section className='py-30 w-full text-center bg-amber-400'>
+        <div className="container">
+          <h1 className='text-center !text-white'>This is an Example of batch update.</h1>
+          <h2 className='text-center !text-white'>{count}</h2>
+          <a href="#" className='button btn-theme' onClick={BatchUpdate}>Batch Update</a>
         </div>
       </section>
     </>
