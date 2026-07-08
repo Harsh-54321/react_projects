@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import React from 'react'
+// import { useState } from 'react'
+// import React from 'react'
 import './App.css'
 import Card from './components/card.jsx'
 
@@ -11,7 +11,8 @@ function App() {
       <h3>hello world</h3>
       <h4>hello world</h4>
       <h5>hello world</h5>
-      <Card />
+      <Card />  
+      
     </>
   )
 }
